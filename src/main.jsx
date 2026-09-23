@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client';
 import { ASSETS, THEME } from './config';
 import './styles.css';
 import { sendRsvp } from './utils/rsvp';
+import { playLaunchSound } from './utils/launchSound';
 
 function Icon({ name }) { return <img className="icon" src={ASSETS.icons[name]} alt="" />; }
 function Crest() { return <div className="crest-row" aria-hidden="true"><span/><div className="crest"><Icon name="queue"/></div><span/></div>; }
@@ -38,5 +39,8 @@ function LoadingBar({ onReady }) {
 function AcceptedScreen() { const [ready, setReady] = useState(false); const title = useRef(null); useEffect(() => { title.current?.focus(); }, []); return <section className="screen accepted-screen" aria-labelledby="accepted-title"><Artwork accepted/><Crest/><div className="accepted-heading"><h1 id="accepted-title" tabIndex={-1} ref={title}>MATCH ACCEPTED</h1><p className="subtitle">Duo locked in.{!ready && <><br/>Rhode Island loading...</>}</p><Divider/></div><div className="accepted-bottom"><div className="destination" aria-hidden="true">◆</div><LoadingBar onReady={() => setReady(true)}/><footer><span/>Same duo. New adventure.<span/></footer></div></section>; }
 function App() { const [accepted, setAccepted] = useState(false); const [attempts, setAttempts] = useState(0); return <main className={`lobby ${accepted ? 'accepted' : ''}`}><div className="outer-corner top-left"/><div className="outer-corner top-right"/>{accepted ? <AcceptedScreen/> : <InviteScreen attempts={attempts} onAttempt={() => setAttempts(n => Math.min(3, n + 1))} onDecline={() => sendRsvp("declined", attempts)} onAccept={() => { setAccepted(true); sendRsvp("accepted", attempts); }}/>}<ParticleLayer autumn={accepted}/><div className="outer-corner bottom-left"/><div className="outer-corner bottom-right"/></main>; }
 createRoot(document.getElementById('root')).render(<App/>);
+const stopLaunchSound = playLaunchSound(ASSETS.audio.queuePop);
+if (import.meta.hot) import.meta.hot.dispose(stopLaunchSound);
+
 
 
