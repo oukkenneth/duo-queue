@@ -17,7 +17,7 @@ function Artwork({ accepted = false }) {
 }
 function ParticleLayer({ autumn }) { return <div className={`particles ${autumn ? 'leaves' : ''}`} aria-hidden="true">{Array.from({length: 14}, (_, i) => <i key={i} style={{'--x': `${(i * 29 + 7) % 100}%`, '--delay': `${-i * 1.7}s`, '--duration': `${9 + i % 5}s`}}/>)}</div>; }
 function InfoPanel() { return <GoldPanel className="info-panel"><dl>{[['location','MODE','Rhode Island Wedding'],['calendar','DATE','November 2026'],['party','PARTY SIZE','2'],['party','ROLE','Kenny’s +1']].map(([icon,label,value]) => <div className="info-row" key={label}><Icon name={icon}/><dt>{label}</dt><dd>{value}</dd></div>)}</dl></GoldPanel>; }
-function NotesPanel() { return <GoldPanel className="notes-panel"><ul>{['good vibes required','dancing optional','pajamas not allowed','duck approval pending'].map(note => <li key={note}><span aria-hidden="true">✦</span>{note}</li>)}</ul><span className="duck" aria-hidden="true">🦆</span></GoldPanel>; }
+function NotesPanel() { return <GoldPanel className="notes-panel"><ul>{['Travel Arrangements : TBD','Dress Code : Fly','Good Vibes : Required','Dance Floor : Optional Objective'].map(note => <li key={note}><span aria-hidden="true">✦</span>{note}</li>)}</ul><span className="duck" aria-hidden="true">🦆</span></GoldPanel>; }
 function DeclineButton({ attempts, onAttempt, onDecline }) {
 
   const [dismissed, setDismissed] = useState(false);

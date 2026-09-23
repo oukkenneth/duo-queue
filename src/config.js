@@ -6,5 +6,5 @@ export const ASSETS = {
   decor: { duck: null, autumnLeaves: null, petals: null, sparkles: null, floralArch: null },
   icons: Object.fromEntries(['queue', 'calendar', 'party', 'location'].map(name => [name, asset(`icons/${name}.svg`)])),
 };
-export const THEME = { loadingMs: 4200, declineMessages: ['you sure?', 'bro really?', 'damn okay 😭'] };
+export const THEME = { loadingMs: 4200, declineMessages: ['you sure??', 'nahh thats crazy?', 'damn okay 😭'] };
 
