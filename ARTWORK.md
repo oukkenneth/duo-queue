@@ -1,0 +1,13 @@
+# Artwork provenance
+
+Generated with the built-in ImageGen tool. Final project paths:
+- public/assets/characters/hero.png
+- public/assets/characters/accepted-autumn.png
+
+## Hero exact prompt
+
+Use case: stylized-concept. Asset type: clean website hero artwork, landscape 3:2. Generate one polished cinematic TFT-style 3D illustration. References: image 1 supplies the joyful wedding character composition only; image 2 is the precise pink Choncc character identity; image 3 is the precise orange and cream Doughcat identity. Depict pink round Choncc on the LEFT laughing joyfully with a huge open mouth, small icy blue horns, lavender paws, pale cream belly, navy bowtie, holding cream wedding flowers. On the RIGHT show chunky squishy orange and cream Doughcat with happy closed eyes, blue-and-white twisted rope headband, white outfit with navy trim and cream flower boutonniere. Keep their distinctive forms, short limbs, plush rounded proportions and expressive faces close to the references. Cream flowers and subtle green leaves frame the edges. Cinematic magical rich blue background, softly luminous gold and blue particles, romantic warm lighting on faces, beautiful softly detailed 3D materials. Characters fill the artwork prominently, both heads fully visible, intimate celebratory pose. ARTWORK ONLY edge-to-edge. No text, no lettering, no labels, no buttons, no interface, no phone, no frame, no logos, no watermarks.
+
+## Autumn exact prompt
+
+Use case: stylized-concept. Asset type: clean website celebration artwork, portrait 2:3. Generate one polished cinematic TFT-style 3D illustration. References: image 1 pink Choncc character identity; image 2 orange cream Doughcat identity; image 3 rightmost phone's scene supplies ONLY composition inspiration, never its phone or UI. Pink round Choncc on LEFT and chunky orange cream Doughcat on RIGHT, seen from BEHIND, sitting close together on an old stone wall, wearing small charming travel backpacks. Choncc has small icy-blue horns and lavender accents; Doughcat wears the distinctive blue-and-white twisted rope headband and white clothing with navy trim. They look toward a Rhode Island rocky coastline, elegant white lighthouse and Newport-style coastal architecture. Late November scene with amber, rust and burgundy foliage, some bare branches, muted blue-grey sea, warm low late-afternoon sunlight. Tiny yellow duck beside them on the stone wall. Portrait composition, characters in lower foreground, rich coastal depth above; cozy celebratory travel mood. Match the reference's polished detailed adorable 3D game artwork and character proportions. ARTWORK ONLY edge-to-edge. No text, lettering, signs, labels, phone, user interface, buttons, frame, logos or watermark.
